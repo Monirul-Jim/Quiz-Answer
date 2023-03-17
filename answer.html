@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    span{
+        font-size: 20px;
+    }
+    div{
+        border: 2px solid rgb(167, 117, 117);
+        background-color: steelblue;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+</style>
+<body>
+    <section>
+        <div>
+            <h1>1) What is the difference between Map,Filter,forEach and find</h1>
+            <p><span id="head">The difference between map,filter,forEach,find is:</span> <br>
+                <span>Map:</span>  returns a new array that is   the result of calling a provided  function on each element of the original array. <br>
+        <span>Filter:  </span>  returns a new array that includes only the elements from the original array that satisfy a provided condition. <br>
+        <span>forEach: </span>calls a provided function once for each element in an array, but it does not return anything. <br>
+        <span>find:   </span> returns the first element in an array that satisfies a provided condition.
+        In summary, map and filter both return new arrays, forEach performs some side-effect on each element, and find returns a single element or undefined.
+        </p>
+        </div>
+        <div>
+            <h1>2)What is the difference between localStorage,sessionStorage and cookies</h1>
+            <p>Local storage is useful for storing data that the user will need to access later,
+            such as offline data. Session storage is a great way to improve the performance
+             of your web applications. Cookies are a good choice for storing data that should
+              not be persisted for a long time, such as session IDs.</p>
+
+        </div>
+        <div>
+            <h1>3) What is event loop</h1>
+            <p>Event loop is manages the execution of multiple asynchronous tasks in a single thread of execution.
+            The event loop works by continuously monitoring a queue of events or tasks and processing them in the order they are received. Each event or task is associated with
+            a callback function that is executed when the event or task is processed.
+            </p>
+        </div>
+    </section>
+    <section>
+        <div>
+            <h1>How does the quizTimer function work</h1>
+            <p>The quizTimer function is used to create a timer that counts
+                the time elapsed for a quiz. It takes a parameter dismiss,
+                which when set to true, clears the timer and stops the countdown. 
+                The function uses setInterval to run a callback function every 1000
+                milliseconds (1 second), which updates the timer display by calculating
+                the minutes and seconds elapsed and displaying them on the HTML page. The function also
+                includes logic to change the color of the timer text every 
+                60 seconds to create a visual effect for the user.</p>
+        </div>
+        <div>
+            <h1>How does the chooseQuiz function work </h1>
+            <p>  The quizTimer function is 
+                responsible for setting up and controlling a timer for
+                a quiz application. The function takes a parameter dismiss
+                that is used to stop the timer. The function uses setInterval 
+                to create a timer that updates the HTML element with ID count every
+                second. The timer is displayed in minutes and seconds format. Additionally,
+                after 60 seconds, the timer color changes every 2 seconds between red and 
+                dark red to indicate the remaining time. When the dismiss parameter is set to true,
+                the clearInterval function is called to stop the timer.</p>
+        </div>
+    </section>
+</body>
+</html>
